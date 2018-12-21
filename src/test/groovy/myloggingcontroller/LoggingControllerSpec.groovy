@@ -16,7 +16,7 @@ class LoggingControllerSpec extends Specification implements ControllerUnitTest<
         TestLoggerFactory.clear()
     }
 
-    void "test something"() {
+    void "index action writes to logs"() {
         when:
         controller.index()
 
